@@ -6,6 +6,7 @@
     <form action = "converti.php" method = "get">
         <p> metodo 1(mio): <input type = "text" name = "num"> </p>
         <p> metodo 2(prof): <input type = "text" name = "rom"> </p>
+        <p> metodo 3: <input type = "text" name = "ara"> </p>
         <input type = "submit" values="submit">
 </form>
 
@@ -107,6 +108,35 @@ while ($rom > 0){
 } 
 
 echo $stringa;
+
+
+
+
+  $ara = $_GET["ara"];
+ 
+  $dividi = array();
+
+  $dividi = str_split($ara);
+
+  for($i=0; $i<10; $i++ ){
+
+    echo $dividi[$i];
+
+  }
+
+  
+
+while ($dividi.empty()){
+
+    if ($ara == $numromani[$r1]){
+        $dividi[$r1].delete();
+        $stringa1 = $stringa + $numArabi[$r1];
+
+    } else {
+        $r1 = $r1 + 1;
+     }  
+    
+} 
 
 
 
